@@ -23680,155 +23680,371 @@ var require_jsx_dev_runtime = __commonJS((exports, module) => {
 
 // src/index.tsx
 var import_client = __toESM(require_client(), 1);
-
 // src/app.tsx
 var jsx_dev_runtime = __toESM(require_jsx_dev_runtime(), 1);
 var App = () => {
   const lastUpdated = new Date().toLocaleString();
   return /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-    style: { fontFamily: "Arial, sans-serif", margin: "20px" },
+    className: "min-h-screen bg-gray-100 text-gray-800 font-sans p-6",
     children: [
       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("header", {
-        style: { textAlign: "center", marginBottom: "30px" },
+        className: "text-center mb-12",
         children: [
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
+            className: "text-5xl font-extrabold text-red-400 mb-4",
             children: "Bun.js & Web Standards APIs"
           }, undefined, false, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+            className: "text-lg text-red-500",
             children: "Entenda como o Bun.js está moldando o futuro dos runtimes JavaScript e APIs Web"
           }, undefined, false, undefined, this)
         ]
       }, undefined, true, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("main", {
+        className: "space-y-12",
         children: [
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
                 children: "O que é o Bun.js?"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+                className: "leading-relaxed",
                 children: "Bun.js é um runtime moderno de JavaScript projetado para ser rápido, leve e amigável para desenvolvedores. Construído com base em motores de JavaScript, como o JavaScriptCore do WebKit, e escrito em Zig, o Bun.js otimiza fluxos de trabalho para desenvolvimento e servidores. Diferente do Node.js, que usa o motor V8 e possui um ecossistema mais amplo, o Bun.js foca na velocidade e simplicidade."
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("a", {
                 href: "https://bun.sh/",
                 target: "_blank",
                 rel: "noopener noreferrer",
-                style: {
-                  display: "inline-block",
-                  marginTop: "10px",
-                  color: "#007acc",
-                  textDecoration: "none"
-                },
+                className: "inline-block mt-4 text-orange-700 hover:underline",
                 children: "Saiba mais sobre o Bun.js →"
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-            style: { marginTop: "30px" },
+            className: "mt-10",
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-6",
                 children: "Comparativo: Bun.js, Node.js e Deno"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
-                children: "Bun.js, Node.js e Deno são runtimes populares, cada um com suas características:"
+                className: "mb-4 leading-relaxed",
+                children: "Compare as principais características dos runtimes de JavaScript mais populares."
               }, undefined, false, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("ul", {
-                children: [
-                  /* @__PURE__ */ jsx_dev_runtime.jsxDEV("li", {
-                    children: [
-                      /* @__PURE__ */ jsx_dev_runtime.jsxDEV("strong", {
-                        children: "Bun.js:"
-                      }, undefined, false, undefined, this),
-                      " Focado em velocidade, especialmente em bundling e transpiling, superando o Node.js em algumas tarefas. Vale ressaltar que ainda não é utilizado no ambiente de produção."
-                    ]
-                  }, undefined, true, undefined, this),
-                  /* @__PURE__ */ jsx_dev_runtime.jsxDEV("li", {
-                    children: [
-                      /* @__PURE__ */ jsx_dev_runtime.jsxDEV("strong", {
-                        children: "Node.js:"
-                      }, undefined, false, undefined, this),
-                      " O mais consolidado e amplamente utilizado, com um vasto ecossistema de pacotes via NPM."
-                    ]
-                  }, undefined, true, undefined, this),
-                  /* @__PURE__ */ jsx_dev_runtime.jsxDEV("li", {
-                    children: [
-                      /* @__PURE__ */ jsx_dev_runtime.jsxDEV("strong", {
-                        children: "Deno:"
-                      }, undefined, false, undefined, this),
-                      " Criado por Ryan Dahl, busca corrigir falhas do Node.js, como suporte nativo a TypeScript e segurança aprimorada."
-                    ]
-                  }, undefined, true, undefined, this)
-                ]
-              }, undefined, true, undefined, this),
-              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
-                children: "Bun.js promete desempenho superior, tornando-se uma ótima opção para quem busca velocidade de execução. Tem vários pontos positivos como por exemplo o suporte nativo ao typescript."
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
+                className: "overflow-x-auto",
+                children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("table", {
+                  className: "w-full bg-white border border-gray-300 text-center text-sm",
+                  children: [
+                    /* @__PURE__ */ jsx_dev_runtime.jsxDEV("thead", {
+                      className: "bg-gray-100",
+                      children: /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                        children: [
+                          /* @__PURE__ */ jsx_dev_runtime.jsxDEV("th", {
+                            className: "px-3 py-2 text-gray-700 border-b",
+                            children: "Função"
+                          }, undefined, false, undefined, this),
+                          /* @__PURE__ */ jsx_dev_runtime.jsxDEV("th", {
+                            className: "px-3 py-2 text-orange-500 border-b",
+                            children: "Bun.js"
+                          }, undefined, false, undefined, this),
+                          /* @__PURE__ */ jsx_dev_runtime.jsxDEV("th", {
+                            className: "px-3 py-2 text-lime-600 border-b",
+                            children: "Node.js"
+                          }, undefined, false, undefined, this),
+                          /* @__PURE__ */ jsx_dev_runtime.jsxDEV("th", {
+                            className: "px-3 py-2 text-neutral-600 border-b",
+                            children: "Deno"
+                          }, undefined, false, undefined, this)
+                        ]
+                      }, undefined, true, undefined, this)
+                    }, undefined, false, undefined, this),
+                    /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tbody", {
+                      children: [
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Suporte nativo a TypeScript"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Velocidade em bundling e transpiling"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Performance geral"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Carregamento ultrarrápido de módulos"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Uso de memória reduzido"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Suporte a APIs Web nativas"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Compatibilidade com React"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Compilado em Zig"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "API para bundling integrada"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this),
+                        /* @__PURE__ */ jsx_dev_runtime.jsxDEV("tr", {
+                          children: [
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "Popularidade"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "✅"
+                            }, undefined, false, undefined, this),
+                            /* @__PURE__ */ jsx_dev_runtime.jsxDEV("td", {
+                              className: "px-3 py-2 border-b",
+                              children: "❌"
+                            }, undefined, false, undefined, this)
+                          ]
+                        }, undefined, true, undefined, this)
+                      ]
+                    }, undefined, true, undefined, this)
+                  ]
+                }, undefined, true, undefined, this)
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-            style: { marginTop: "30px" },
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
                 children: "O que são Web Standards APIs?"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+                className: "leading-relaxed",
                 children: "Web Standards APIs são interfaces padronizadas que permitem interação consistente com o navegador ou ambiente web, promovendo a interoperabilidade entre dispositivos e navegadores. Exemplos incluem a Fetch API, DOM API e WebSockets, essenciais para criar aplicações web modernas."
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("a", {
                 href: "https://wintercg.org/",
                 target: "_blank",
                 rel: "noopener noreferrer",
-                style: {
-                  display: "inline-block",
-                  marginTop: "10px",
-                  color: "#007acc",
-                  textDecoration: "none"
-                },
+                className: "inline-block mt-4 text-orange-700 hover:underline",
                 children: "Saiba mais sobre web standards api →"
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-            style: { marginTop: "30px" },
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
                 children: "Relação do Bun.js com as Web Standards APIs"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+                className: "leading-relaxed",
                 children: "O Bun.js é otimizado para Web Standards APIs, oferecendo um ambiente de execução rápido para trabalhar com APIs como a Fetch API, DOM API e WebSockets. Isso permite que os desenvolvedores testem e executem código que depende dessas APIs de maneira mais eficiente."
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+                className: "leading-relaxed",
                 children: "Ao integrar-se com essas APIs, o Bun melhora o desempenho, tornando o desenvolvimento de aplicações web mais rápido e eficiente. Sua execução rápida e compatibilidade com ferramentas modernas, como o React, tornam o processo mais ágil."
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-            style: { marginTop: "30px" },
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
                 children: "Integração do Bun com o React"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
-                children: "O Bun.js oferece suporte a JSX e TypeScript, além de se integrar bem com ferramentas como Webpack e Babel, acelerando o fluxo de trabalho no desenvolvimento de projetos React. A SPA desenvolvida aqui é um exemplo prático (exemplo simples) da utilização das tecnologias citadas."
+                className: "leading-relaxed",
+                children: "A integração do Bun.js com React é um dos seus pontos fortes, especialmente para desenvolvedores que buscam velocidade e simplicidade no desenvolvimento de aplicações. Bun foi projetado para ser altamente eficiente e suporta frameworks como React diretamente, tornando-o uma alternativa interessante."
               }, undefined, false, undefined, this)
             ]
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
-            style: { marginTop: "30px" },
             children: [
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
+                children: "Limitações"
+              }, undefined, false, undefined, this),
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
+                className: "leading-relaxed",
+                children: "Apesar das vantagens citadas, o Bun ainda é uma tecnologia em crescimento, e o seu desempenho é testado apenas em projetos teste. Por ainda ser uma tecnologia relativamente nova, alguns desenvolvedores hesitam em usá-la em produção, principalmente por conta de possíveis incompatibilidades ou bugs."
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
+          /* @__PURE__ */ jsx_dev_runtime.jsxDEV("section", {
+            children: [
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h2", {
+                className: "text-3xl font-semibold mb-4",
                 children: "Tecnologias Utilizadas"
               }, undefined, false, undefined, this),
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-                style: { display: "flex", justifyContent: "space-around" },
+                className: "flex justify-around items-center",
                 children: [
                   /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-                    style: { textAlign: "center" },
+                    className: "text-center",
                     children: [
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("img", {
                         src: "./public/image/React-Dark.svg",
                         alt: "React Logo",
-                        style: { width: "100px" }
+                        className: "w-24 mx-auto mb-2"
                       }, undefined, false, undefined, this),
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
                         children: "React"
@@ -23836,12 +24052,12 @@ var App = () => {
                     ]
                   }, undefined, true, undefined, this),
                   /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-                    style: { textAlign: "center" },
+                    className: "text-center",
                     children: [
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("img", {
                         src: "./public/image/Bun-Dark.svg",
                         alt: "Bun Logo",
-                        style: { width: "100px" }
+                        className: "w-24 mx-auto mb-2"
                       }, undefined, false, undefined, this),
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
                         children: "Bun.js"
@@ -23849,12 +24065,12 @@ var App = () => {
                     ]
                   }, undefined, true, undefined, this),
                   /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-                    style: { textAlign: "center" },
+                    className: "text-center",
                     children: [
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("img", {
                         src: "./public/image/TypeScript.svg",
                         alt: "TypeScript Logo",
-                        style: { width: "100px" }
+                        className: "w-24 mx-auto mb-2"
                       }, undefined, false, undefined, this),
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
                         children: "TypeScript"
@@ -23862,15 +24078,15 @@ var App = () => {
                     ]
                   }, undefined, true, undefined, this),
                   /* @__PURE__ */ jsx_dev_runtime.jsxDEV("div", {
-                    style: { textAlign: "center" },
+                    className: "text-center",
                     children: [
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("img", {
-                        src: "./public/image/JavaScript.svg",
-                        alt: "JavaScript Logo",
-                        style: { width: "100px" }
+                        src: "./public/image/TailwindCSS-Dark.svg",
+                        alt: "Tailwind Logo",
+                        className: "w-24 mx-auto mb-2"
                       }, undefined, false, undefined, this),
                       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
-                        children: "JavaScript"
+                        children: "Tailwind CSS"
                       }, undefined, false, undefined, this)
                     ]
                   }, undefined, true, undefined, this)
@@ -23881,11 +24097,22 @@ var App = () => {
         ]
       }, undefined, true, undefined, this),
       /* @__PURE__ */ jsx_dev_runtime.jsxDEV("footer", {
-        style: { textAlign: "center", marginTop: "40px" },
+        className: "text-center mt-12 border-t pt-6",
         children: [
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
-            children: "Powered by React and Bun.js"
-          }, undefined, false, undefined, this),
+            children: [
+              "Powered by ",
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("span", {
+                className: "font-semibold text-blue-600",
+                children: "React"
+              }, undefined, false, undefined, this),
+              " and ",
+              /* @__PURE__ */ jsx_dev_runtime.jsxDEV("span", {
+                className: "font-semibold text-orange-500",
+                children: "Bun.js"
+              }, undefined, false, undefined, this)
+            ]
+          }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
             children: [
               "Última atualização: ",
@@ -23896,11 +24123,13 @@ var App = () => {
           }, undefined, true, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {
             children: [
-              "Autor: ",
+              "Autor:",
+              " ",
               /* @__PURE__ */ jsx_dev_runtime.jsxDEV("a", {
                 href: "https://www.linkedin.com/in/wesley-batista-74b7a1198/",
                 target: "_blank",
                 rel: "noopener noreferrer",
+                className: "text-blue-600 hover:underline",
                 children: "Wesley B. Santana"
               }, undefined, false, undefined, this)
             ]

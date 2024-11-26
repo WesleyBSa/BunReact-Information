@@ -11,14 +11,12 @@ Bun.serve({
   fetch(req) {
     const url = new URL(req.url);
 
-    // Servir o favicon
     if (url.pathname === "/favicon.ico") {
       return new Response(Bun.file("./public/favicon.ico"), {
         headers: { "Content-Type": "image/x-icon" },
       });
     }
 
-    // Renderiza o template HTML para a raiz ou página de index
     if (url.pathname === "/" || url.pathname.endsWith("/index.mustache")) {
       const html = renderTemplate("./public/index.mustache", {
         title: "Bun + React + Mustache",
@@ -26,9 +24,9 @@ Bun.serve({
       return new Response(html, { headers: { "Content-Type": "text/html" } });
     }
 
-    // Servir arquivos estáticos de assets (CSS, JS, imagens)
+    
     if (url.pathname.startsWith("/assets/")) {
-      const path = `.${url.pathname}`;  // Corrigido para servir corretamente os arquivos em "public/assets"
+      const path = `.${url.pathname}`;  
       try {
         const stats = statSync(path);
         if (stats.isFile()) {
@@ -45,7 +43,6 @@ Bun.serve({
       }
     }
 
-    // Para outros arquivos
     try {
       const path = "." + url.pathname;
       const stats = statSync(path);
