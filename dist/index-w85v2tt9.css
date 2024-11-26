@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-dark {
+    background-color: #0a0c16; /* Um azul muito escuro mesclado com preto */
+  }
+  
+button[aria-label="Toggle Theme"] {
+    font-size: 1.5rem;
+  }
+  
+  /* Tabela */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+  }
+  
+  table th, table td {
+    text-align: center;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg: #f9f9f9;
+    --text: #333;
+    --link: #f97316;
+  }
+  
+  .dark {
+    --bg: #1f2937;
+    --text: #f3f4f6;
+    --link: #fb923c;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  a {
+    color: var(--link);
+  }
+  
+button[aria-label="Toggle Theme"] {
+    font-size: 1.5rem;
+  }
+  
+  /* Tabela */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+  }
+  
+  table th, table td {
+    text-align: center;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+    }
+  }
+  

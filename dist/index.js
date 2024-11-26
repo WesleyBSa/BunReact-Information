@@ -23691,7 +23691,7 @@ var App = () => {
         className: "text-center mb-12",
         children: [
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("h1", {
-            className: "text-5xl font-extrabold text-red-400 mb-4",
+            className: "text-3xl font-extrabold text-red-400 mb-4",
             children: "Bun.js & Web Standards APIs"
           }, undefined, false, undefined, this),
           /* @__PURE__ */ jsx_dev_runtime.jsxDEV("p", {

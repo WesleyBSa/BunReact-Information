@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800 font-sans p-6">
       { }
       <header className="text-center mb-12">
-        <h1 className="text-5xl font-extrabold text-red-400 mb-4">Bun.js & Web Standards APIs</h1>
+        <h1 className="text-3xl font-extrabold text-red-400 mb-4">Bun.js & Web Standards APIs</h1>
         <p className="text-lg text-red-500">
           Entenda como o Bun.js está moldando o futuro dos runtimes JavaScript e APIs Web
         </p>
