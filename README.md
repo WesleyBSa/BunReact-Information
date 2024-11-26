@@ -1,11 +1,5 @@
 # **Bun.js & Web Standards APIs**
 
-![Bun.js](./public/image/Bun-Dark.svg)
-![React](./public/image/React-Dark.svg)
-![TypeScript](./public/image/TypeScript.svg)
-![Tailwind CSS](./public/image/TailwindCSS-Dark.svg)
-![Mustache](https://img.shields.io/badge/Template-Mustache-blue)
-
 Este projeto explora o **Bun.js**, suas integrações com **Web Standards APIs**, e a forma como ele interage com **React** para desenvolvimento rápido e moderno. Inclui um comparativo entre os runtimes JavaScript mais populares: **Bun.js**, **Node.js** e **Deno**, além de destacar as tecnologias utilizadas no projeto.
 
 ---
@@ -25,19 +19,19 @@ A aplicação busca demonstrar como o **Bun.js** pode moldar o futuro dos runtim
 
 <div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap; gap: 15px;">
 
-![React](./public/image/React-Dark.svg)  
+<img src="./public/image/React-Dark.svg" alt="React" width="80">
 **React** - Biblioteca para construção de interfaces de usuário.
 
-![Bun.js](./public/image/Bun-Dark.svg)  
+<img src="./public/image/Bun-Dark.svg" alt="Bun.js" width="80">
 **Bun.js** - Runtime de JavaScript ultrarrápido, escrito em Zig.
 
-![TypeScript](./public/image/TypeScript.svg)  
+<img src="./public/image/TypeScript.svg" alt="TypeScript" width="80">
 **TypeScript** - Superset de JavaScript que adiciona tipagem estática.
 
-![Tailwind CSS](./public/image/TailwindCSS-Dark.svg)  
+<img src="./public/image/TailwindCSS-Dark.svg" alt="Tailwind CSS" width="80">
 **Tailwind CSS** - Framework utilitário para estilização rápida e responsiva.
 
-![Mustache](https://img.shields.io/badge/Template-Mustache-blue)  
+<img src="https://img.shields.io/badge/Template-Mustache-blue" alt="Mustache" width="80">
 **Mustache** - Motor de template simples e flexível.
 
 </div>
